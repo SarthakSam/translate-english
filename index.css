@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Syne Mono', monospace;
+    color: var(--secondary-color);
+    border: 0;
+    font-size: 20px;
+    background-color: var(--background-color);
+}
+
+:root {
+    --primary-color: #4299f5;
+    --secondary-color: #ced8e3;
+    --background-color:  #f5f8fb;
+    /* --width: 60vw; */
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    width: 60vw;
+    margin: auto;
+    min-width: 300px;
+
+}
+
+#translator-header {
+    width: 30vw;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    line-height: 20px;
+    margin: auto;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 3px 3px var(--secondary-color);
+}
+
+#translator-header * {
+    border: 0;
+    font-weight: 800;
+}
+
+.card {
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 6px 6px var(--secondary-color);
+    width: 30vw;
+    height: 30vh; 
+    min-width: 230px;
+    border: 0.5px solid var(--secondary-color);
+}
+
+#input-field {
+    padding: 10px;
+    outline: none;
+    display: block;
+}
+
+#btn-translate {
+    margin: 10px auto;
+    width: 230px;
+    display: block;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+#output-field {
+    min-height: 30vh;
+}
