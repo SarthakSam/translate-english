@@ -8,9 +8,10 @@ var apiUrlObj = {
     ferbLatin: "https://api.funtranslations.com/translate/ferb-latin.json",
     dothrarki: "https://api.funtranslations.com/translate/dothraki.json",
     chef: "https://api.funtranslations.com/translate/chef.json",
-    catalan: "https://api.funtranslations.com/translate/catalan.json",
+    emoji: "https://api.funtranslations.com/translate/emoji.json",
     shakespeare: "https://api.funtranslations.com/translate/shakespeare.json",
-    vulcan: "https://api.funtranslations.com/translate/vulcan.json"
+    vulcan: "https://api.funtranslations.com/translate/vulcan.json",
+    australian: "https://api.funtranslations.com/translate/australian.json"
 }
 
 var translatorMenu = document.querySelector('#translator-menu');
