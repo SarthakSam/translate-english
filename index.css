@@ -20,6 +20,9 @@
 
 body {
     background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
@@ -29,14 +32,29 @@ header, footer {
     padding: 10px;
 }
 
+footer {
+    /* position: fixed; */
+    font-size: 1.2rem;
+    bottom: 0;
+    width: 100vw;
+}
+
 footer p {
     background-color: var(--primary-color);
 }
 
-main {
-    margin: auto;
-    min-width: 300px;
+@media( min-width: 430px) {
+    main {
+        /* margin: auto; */
+        /* min-width: 300px;  */
+        background-image: url(images/background4.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.7;
+        flex: 1;
+    }       
 }
+
 
 #translator-header {
     width: 30vw;
@@ -68,7 +86,7 @@ translator-header option {
     border-radius: 30px;
     box-shadow: 6px 6px var(--secondary-color);
     width: 30vw;
-    height: 25vh; 
+    height: 20vh; 
     min-width: 230px;
     border: 0.5px solid var(--secondary-color);
     padding: 10px;
