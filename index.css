@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Yeon Sung', cursive;
     color: var(--secondary-color);
     border: 0;
     font-size: 20px;
