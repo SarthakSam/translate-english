@@ -99,6 +99,6 @@ translator-header option {
     background-color: var(--primary-color);
 }
 
-#input-field::-webkit-input-placeholder {
+#input-field::placeholder {
     color: var(--secondary-color);
 }
