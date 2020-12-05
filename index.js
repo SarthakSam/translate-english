@@ -22,11 +22,19 @@ var btnTranslate = document.querySelector("#btn-translate");
 btnTranslate.addEventListener('click', () => {
     let userInputText = inputField.value;
     if ( userInputText ) {
-        fetch( getUrl( userInputText ) )
-        .then( response => response.json() )
-        .then( response => {
-            outputField.innerText = response.contents.translated;
-        })
+        let url = getUrl( userInputText );
+        fetch( url )
+            .then( response => response.json() )
+            .then( response => {
+                if(!response.error)
+                    outputField.innerText = response.contents.translated;
+                else 
+                    throw new Error(response.error.message);
+            })
+            .catch( err => {
+                console.log(err);
+                alert(err.name + ":" + err.message)
+            })
         }
 });
 

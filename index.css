@@ -26,11 +26,11 @@ header, footer {
     background-color: var(--primary-color);
     font-size: 2rem;
     text-align: center;
+    padding: 10px;
 }
 
 footer p {
     background-color: var(--primary-color);
-
 }
 
 main {
@@ -44,7 +44,7 @@ main {
     padding: 10px;
     border-radius: 20px;
     line-height: 20px;
-    margin: 10px auto;
+    margin: 20px auto;
     border: 2px solid var(--secondary-color);
     display: flex;
     justify-content: space-around;
@@ -68,7 +68,7 @@ translator-header option {
     border-radius: 30px;
     box-shadow: 6px 6px var(--secondary-color);
     width: 30vw;
-    height: 30vh; 
+    height: 25vh; 
     min-width: 230px;
     border: 0.5px solid var(--secondary-color);
     padding: 10px;
@@ -99,6 +99,6 @@ translator-header option {
     background-color: var(--primary-color);
 }
 
-#output-field {
-    min-height: 30vh;
+#input-field::-webkit-input-placeholder {
+    color: var(--secondary-color);
 }
